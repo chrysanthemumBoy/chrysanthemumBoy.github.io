@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[CSS3动画（360度旋转、旋转放大、放大、移动）]]></title>
+    <url>%2F2018%2F09%2F16%2FCSS3%E5%8A%A8%E7%94%BB%EF%BC%88360%E5%BA%A6%E6%97%8B%E8%BD%AC%E3%80%81%E6%97%8B%E8%BD%AC%E6%94%BE%E5%A4%A7%E3%80%81%E6%94%BE%E5%A4%A7%E3%80%81%E7%A7%BB%E5%8A%A8%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[CSS3 动画 360度旋转、旋转放大、放大、移动 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Title&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; div&#123; width:120px; height:120px; line-height:120px; margin: 20px; background-color: #5cb85c; float: left; font-size: 12px; text-align: center; color:orangered; &#125; /*效果一：360°旋转 修改rotate(旋转度数)*/ .img1 &#123; transition: All 0.4s ease-in-out; -webkit-transition: All 0.4s ease-in-out; -moz-transition: All 0.4s ease-in-out; -o-transition: All 0.4s ease-in-out; &#125; .img1:hover &#123; transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg); -ms-transform: rotate(360deg); &#125; /*效果二：放大 修改scale(放大的值)*/ .img2 &#123; transition: All 0.4s ease-in-out; -webkit-transition: All 0.4s ease-in-out; -moz-transition: All 0.4s ease-in-out; -o-transition: All 0.4s ease-in-out; &#125; .img2:hover &#123; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); &#125; /*效果三：旋转放大 修改rotate(旋转度数) scale(放大值)*/ .img3 &#123; transition: All 0.4s ease-in-out; -webkit-transition: All 0.4s ease-in-out; -moz-transition: All 0.4s ease-in-out; -o-transition: All 0.4s ease-in-out; &#125; .img3:hover &#123; transform: rotate(360deg) scale(1.2); -webkit-transform: rotate(360deg) scale(1.2); -moz-transform: rotate(360deg) scale(1.2); -o-transform: rotate(360deg) scale(1.2); -ms-transform: rotate(360deg) scale(1.2); &#125; /*效果四：上下左右移动 修改translate(x轴,y轴)*/ .img4 &#123; transition: All 0.4s ease-in-out; -webkit-transition: All 0.4s ease-in-out; -moz-transition: All 0.4s ease-in-out; -o-transition: All 0.4s ease-in-out; &#125; .img4:hover &#123; transform: translate(0, -10px); -webkit-transform: translate(0, -10px); -moz-transform: translate(0, -10px); -o-transform: translate(0, -10px); -ms-transform: translate(0, -10px); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;img1&quot;&gt;效果一：360°旋转 &lt;/div&gt;&lt;div class=&quot;img2&quot;&gt;效果二：放大&lt;/div&gt;&lt;div class=&quot;img3&quot;&gt;效果三：旋转放大&lt;/div&gt;&lt;div class=&quot;img4&quot;&gt;效果四：上下左右移动 &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>CSS3</category>
+      </categories>
+      <tags>
+        <tag>-CSS3动画</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[搭建自己的个人博客]]></title>
+    <url>%2F2018%2F09%2F13%2F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[搭建个人博客方法总结~~~简洁 ####（1）准备工作 安装Node.js和git，直接百度下载，傻瓜式安装一键点击下一步，在安装node.js时要使用自动配置环境变量，这样就不用手动配置了，还需要注册一个github账号。 ####（2）博客搭建 新建myHexoBlog文件夹（名字自己取吧），文件夹中右键Git Bash Here输入 npm install hexo 回车，会出现node_modules的文件夹。 依次执行hexo命令：hexo init –初始化hexo环境npm install –安装npm依赖包hexo generate –生成静态页面hexo server –生成本地服务 浏览器输入http://localhost:4000，出现下面界面说明博客安装完成。 ####（3）使用github将博客发布到网络上。 创建远程仓库：new repository 注意：repository name要与自己github的名字一样。连接github仓库到本地仓库：文件夹中找到——config.yml文件，找到deploy修改成deploy：type: gitrepo： git@github.com:yourname.github.io.gitbranch: master GitBash依次执行npm install hexo-deployer-git –savehexo deploy博客发布到网络完成。 发布第一篇博客：hexo new 这是我的第一篇博客…………………… hexo还有很多操作例如next装修界面等等等，有兴趣的可以观看他的视频哦，简洁明了。B站UP主 Mackxin]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+</search>
