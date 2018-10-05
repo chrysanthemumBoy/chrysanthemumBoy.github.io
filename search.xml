@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hellowolrd]]></title>
-    <url>%2F2018%2F10%2F05%2Fhellowolrd%2F</url>
-    <content type="text"><![CDATA[hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2018%2F10%2F04%2Fvuejs%E8%B7%AF%E7%94%B1%2F</url>
-    <content type="text"><![CDATA[layout: hexotitle: vuejs路由date: 2018-10-04 14:26:35tags: -vue -路由 实现页面跳转的功能。第一步：导入vue.js 和 vue-router 第二步：定义功能组件 第三步：定义一个空组件 第四步：实例化一个路由的对象var newRouter = new newRouter();]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[vue实现animate动画]]></title>
     <url>%2F2018%2F09%2F29%2Fvue%E5%AE%9E%E7%8E%B0animate%E5%8A%A8%E7%94%BB%2F</url>
     <content type="text"><![CDATA[在vue中使用animate库快速建立动画效果animate.css下载地址，该地址提供各种样式的演示效果。1234567891011121314151617181920212223242526272829303132333435363738394041424344454647&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Document&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;css/animate.css&quot;&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;js/vue1.0.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;div id=&quot;app&quot;&gt; &lt;button @click=&quot;toggle&quot;&gt;显示和隐藏&lt;/button&gt;&lt;br/&gt; &lt;div v-show=&quot;isShow&quot; class=&quot;animated&quot; transition=&quot;show&quot;&gt;hello vue&lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;script type=&quot;text/javascript&quot;&gt; new Vue(&#123; el: &apos;#app&apos;, data: &#123; isShow: false &#125;, methods: &#123; toggle: function()&#123; this.isShow = !this.isShow; &#125; &#125;, transitions: &#123; &apos;show&apos;:&#123; enterClass:&apos;bounceInLeft&apos;, ** leaveClass:&apos;bounceOutLeft&apos; ** &#125; &#125; &#125;)&lt;/script&gt;&lt;/html&gt;]]></content>
