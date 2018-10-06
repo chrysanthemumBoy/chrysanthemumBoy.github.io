@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[数组的操作方法]]></title>
+    <url>%2F2018%2F10%2F05%2F%E6%95%B0%E7%BB%84%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[数组的添加： push 添加在原数组之后 unshift 添加在数组之前 数组的删除： pop 删除数组最后一个 shift 删除数组第一个 通过arr.unshift(arr.pop())实现数组的顺序移动的效果 通过arr.push(arr.shift())实现数组逆向的顺序移动的效果 实现3d图片切换的效果 数组的添加、替换、删除 splicearr.splice(0 , 1)//从数组的第几位开始删除几个数组 arr.splice(0 , 1, &#39;hello&#39;) //从数组的第几位开始 替换 arr.splice(1 ,0, &#39;hello&#39;，&#39;..&#39;) //从数组的第几位添加 JavaScript数据去重1234567891011121314151617181920&lt;script&gt; var arr = [5,9,6,5,6,7,6]; for (var i=0;i&lt;arr.length;i++)&#123; for (var j=i+1;j&lt;arr.length;j++)&#123; if(arr[i] == arr[j])&#123; arr.splice(j,1); j--; &#125; &#125; &#125; alert(arr);&lt;/script&gt; 数组的排序 sort 1234567891011//arr = [&apos;b&apos;,&apos;d&apos;,&apos;a&apos;,&apos;c&apos;,&apos;e&apos;];//arr.sort();arr2 = [1,6,5,89,12];arr2.sort(function(a,b)&#123; return a-b;//从小到大 //return b-a;//从大到小，针对数字的需要用到sort内部的比较函数&#125;);alert(arr2);]]></content>
+      <tags>
+        <tag>js</tag>
+        <tag>数组</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vue实现animate动画]]></title>
     <url>%2F2018%2F09%2F29%2Fvue%E5%AE%9E%E7%8E%B0animate%E5%8A%A8%E7%94%BB%2F</url>
     <content type="text"><![CDATA[在vue中使用animate库快速建立动画效果animate.css下载地址，该地址提供各种样式的演示效果。1234567891011121314151617181920212223242526272829303132333435363738394041424344454647&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Document&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;css/animate.css&quot;&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;js/vue1.0.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;div id=&quot;app&quot;&gt; &lt;button @click=&quot;toggle&quot;&gt;显示和隐藏&lt;/button&gt;&lt;br/&gt; &lt;div v-show=&quot;isShow&quot; class=&quot;animated&quot; transition=&quot;show&quot;&gt;hello vue&lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;script type=&quot;text/javascript&quot;&gt; new Vue(&#123; el: &apos;#app&apos;, data: &#123; isShow: false &#125;, methods: &#123; toggle: function()&#123; this.isShow = !this.isShow; &#125; &#125;, transitions: &#123; &apos;show&apos;:&#123; enterClass:&apos;bounceInLeft&apos;, ** leaveClass:&apos;bounceOutLeft&apos; ** &#125; &#125; &#125;)&lt;/script&gt;&lt;/html&gt;]]></content>
