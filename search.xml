@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[lalala]]></title>
-    <url>%2F2018%2F10%2F07%2Flalala%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[数组的操作方法]]></title>
     <url>%2F2018%2F10%2F05%2F%E6%95%B0%E7%BB%84%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[数组的添加： push 添加在原数组之后 unshift 添加在数组之前 数组的删除： pop 删除数组最后一个 shift 删除数组第一个 通过arr.unshift(arr.pop())实现数组的顺序移动的效果 通过arr.push(arr.shift())实现数组逆向的顺序移动的效果 实现3d图片切换的效果 数组的添加、替换、删除 splicearr.splice(0 , 1)//从数组的第几位开始删除几个数组 arr.splice(0 , 1, &#39;hello&#39;) //从数组的第几位开始 替换 arr.splice(1 ,0, &#39;hello&#39;，&#39;..&#39;) //从数组的第几位添加 JavaScript数据去重1234567891011121314151617181920&lt;script&gt; var arr = [5,9,6,5,6,7,6]; for (var i=0;i&lt;arr.length;i++)&#123; for (var j=i+1;j&lt;arr.length;j++)&#123; if(arr[i] == arr[j])&#123; arr.splice(j,1); j--; &#125; &#125; &#125; alert(arr);&lt;/script&gt; 数组的排序 sort 1234567891011//arr = [&apos;b&apos;,&apos;d&apos;,&apos;a&apos;,&apos;c&apos;,&apos;e&apos;];//arr.sort();arr2 = [1,6,5,89,12];arr2.sort(function(a,b)&#123; return a-b;//从小到大 //return b-a;//从大到小，针对数字的需要用到sort内部的比较函数&#125;);alert(arr2);]]></content>
