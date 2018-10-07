@@ -3,7 +3,10 @@
   <entry>
     <title><![CDATA[JavaSript实现图片切换]]></title>
     <url>%2F2018%2F10%2F07%2FJavaSript%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E5%88%87%E6%8D%A2%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[原生JS代码实现图片的切换效果（轮播图）,效果如下： JS代码：123456789101112131415161718192021222324252627282930313233343536&lt;script type=&quot;text/javascript&quot;&gt; window.onload = function() var oPrev = document.getElementById(&apos;prev&apos;); var oNext = document.getElementById(&apos;next&apos;); var oText = document.getElementById(&apos;text&apos;); var oSpan = document.getElementById(&apos;span1&apos;); var oImg = document.getElementById(&apos;img&apos;) var aUrl = [&apos;img/tab1.jpg&apos;,&apos;img/tab2.jpg&apos;,&apos;img/tab3.jpg&apos;,&apos;img/tab4.jpg&apos;,&apos;img/tab5.jpg&apos;]; var aText = [&apos;第一张&apos;,&apos;第二张&apos;,&apos;第三张&apos;,&apos;第四张&apos;,&apos;第五张&apos;] //初始化 var num = 0 fnTab() function fnTab()&#123; oText.innerHTML = aText[num]; oSpan.innerHTML = num + 1 + &apos;/&apos; + aUrl.length; oImg.src = aUrl[num]; &#125;; oNext.onclick = function() num ++; if (num == aUrl.length) &#123; num = 0; fnTab(); &#125; oPrev.onclick = function()&#123; num --; if (num == -1) &#123; num = aUrl.length-1; &#125; fnTab(); &#125; &lt;/script&gt;]]></content>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[数组的操作方法]]></title>
